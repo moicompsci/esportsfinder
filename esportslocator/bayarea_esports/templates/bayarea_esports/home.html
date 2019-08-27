@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bay-Area Esports</title>
+		<h1>Smash Tournaments in San Francisco Bay Area</h1>
+	</head>
+	<body>
+		</br>
+		<!--posts is the dictionary key of our context from views.py-->
+		<!--Html for loop use curly braces and percent signs-->
+		{% for post in posts %}
+			<!--Use double curlys to access variables-->
+			<h1>{{post.event}}</h1>
+			<p>When: {{post.date}}</p>
+			<p>Where: {{post.location}}</p>
+			</br>
+		{% endfor %}
+	</body>
+</html>
